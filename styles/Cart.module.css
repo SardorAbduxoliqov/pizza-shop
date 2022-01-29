@@ -97,4 +97,20 @@
   .quantity {
     font-size: 22px;
   }
+
+  .price::before {
+    content: "Price: ";
+    font-weight: 500;
+  }
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+  .quantity::before {
+    content: "Quantity: ";
+    font-weight: 500;
+  }
+  .wrapper {
+    width: 100%;
+  }
 }

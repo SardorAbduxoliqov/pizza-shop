@@ -13,23 +13,21 @@ const Order = () => {
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th>Order ID</th>
               <th>Customer</th>
               <th>Address</th>
               <th>Total</th>
             </tr>
-            <tr>
+            <tr className={styles.tr}>
               <td>
-                <span className={styles.id}>123321433418293874</span>
+                <span className={styles.id}>123321433418</span>
               </td>
               <td>
-                <span className={styles.extras}>John Doe</span>
+                <span className={styles.name}>John Doe</span>
               </td>
               <td>
-                <span className={styles.address}>
-                  Tashkent shahar, Yunusobod 2, 12, 21
-                </span>
+                <span className={styles.address}>Tashkent shahar </span>
               </td>
               <td>
                 <span className={styles.total}>$35.18</span>
