@@ -1,10 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useEffect } from "react";
 import Featured from "../components/Featured";
 import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -16,4 +18,8 @@ export default function Home() {
       <PizzaList />
     </div>
   );
+}
+
+export const getServerSideProps = async () => {
+  
 }
