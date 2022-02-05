@@ -38,7 +38,33 @@ const index = () => {
           </tbody>
         </table>
       </div>
-      <div className={styles.item}></div>
+      <div className={styles.item}>
+        <h1 className={styles.title}>Orders</h1>
+        <table className={styles.table}>
+          <tbody>
+            <tr className={styles.trTitle}>
+              <th>Id</th>
+              <th>Customer</th>
+              <th>Total</th>
+              <th>Payment</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr className={styles.trTitle}>
+              <td>{"103482903483102839412948127".slice(0, 5)}...</td>
+              <td>John Doe</td>
+              <td>$50</td>
+              <td>paid</td>
+              <td>preparing</td>
+              <td>
+                <button>Next Stage</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
